@@ -1,0 +1,29 @@
+﻿.easy-pie-chart {
+  position: relative;
+  width: 110px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+/* line 13, ../../sass/partials/_chart.scss */
+.easy-pie-chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 19, ../../sass/partials/_chart.scss */
+.easy-pie-chart .percent {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  line-height: 110px;
+  z-index: 2;
+}
+/* line 25, ../../sass/partials/_chart.scss */
+.easy-pie-chart .percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}

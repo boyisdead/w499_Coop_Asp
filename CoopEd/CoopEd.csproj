@@ -75,6 +75,83 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="Scripts\accounting.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\bootstrap-dialog.min.js" />
+    <Content Include="Scripts\bootstrap-slider.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\chosen.jquery.js" />
+    <Content Include="Scripts\dataTables-plugins.js" />
+    <Content Include="Scripts\dataTables.fixedHeader.min.js" />
+    <Content Include="Scripts\handlebars-v1.3.0.js" />
+    <Content Include="Scripts\helpers.js" />
+    <Content Include="Scripts\hogan-2.0.0.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Scripts\jquery.colorbox-min.js" />
+    <Content Include="Scripts\jquery.colorbox.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.dataTables.rowGrouping.js" />
+    <Content Include="Scripts\jquery.nouislider.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\ng\app\app-config.js" />
+    <Content Include="Scripts\ng\app\app-controller.js" />
+    <Content Include="Scripts\ng\app\server.js" />
+    <Content Include="Scripts\ng\components\directives\angular-loading-bar\loading-bar-overrides.css" />
+    <Content Include="Scripts\ng\components\directives\angular-loading-bar\loading-bar.css" />
+    <Content Include="Scripts\ng\components\directives\angular-loading-bar\loading-bar.js" />
+    <Content Include="Scripts\ng\components\directives\angular-loading-bar\loading-bar.min.css" />
+    <Content Include="Scripts\ng\components\directives\angular-loading-bar\loading-bar.min.js" />
+    <Content Include="Scripts\ng\components\directives\filter-decimal\filter-decimal.js" />
+    <Content Include="Scripts\ng\components\directives\ng-blur\ng-blur.js" />
+    <Content Include="Scripts\ng\components\filters\json-date.js" />
+    <Content Include="Scripts\ng\components\filters\moment.js" />
+    <Content Include="Scripts\ng\components\filters\percent.js" />
+    <Content Include="Scripts\ng\components\filters\period-to-date.js" />
+    <Content Include="Scripts\ng\components\filters\total.js" />
+    <Content Include="Scripts\ng\components\filters\trim.js" />
+    <Content Include="Scripts\ng\components\services\request-service.js" />
+    <Content Include="Scripts\ng\components\services\service-alerts.js" />
+    <Content Include="Scripts\ng\lib\alphaum\alphanum.js" />
+    <Content Include="Scripts\ng\lib\angular-animate\ng-animation.css" />
+    <Content Include="Scripts\ng\lib\angular-easy-pie\angular-easy-pie.css" />
+    <Content Include="Scripts\ng\lib\angular-easy-pie\angular-easy-pie.min.js" />
+    <Content Include="Scripts\ng\lib\angular-file-upload\angular-file-upload.min.js" />
+    <Content Include="Scripts\ng\lib\angular-google-chart\ng-google-chart.js" />
+    <Content Include="Scripts\ng\lib\angular-strap\angular-motion.min.css" />
+    <Content Include="Scripts\ng\lib\angular-strap\angular-strap.js" />
+    <Content Include="Scripts\ng\lib\angular-strap\angular-strap.min.js" />
+    <Content Include="Scripts\ng\lib\angular-strap\angular-strap.tpl.js" />
+    <Content Include="Scripts\ng\lib\angular-strap\angular-strap.tpl.min.js" />
+    <Content Include="Scripts\ng\lib\angular-strap\bootstrap-additions.min.css" />
+    <Content Include="Scripts\ng\lib\angular\angular-animate.min.js" />
+    <Content Include="Scripts\ng\lib\angular\angular-resource.min.js" />
+    <Content Include="Scripts\ng\lib\angular\angular.min.js" />
+    <Content Include="Scripts\ng\lib\d3\d3js\d3.js" />
+    <Content Include="Scripts\ng\lib\d3\d3js\d3.min.js" />
+    <Content Include="Scripts\ng\lib\d3\ng-nvd3\angular-nvd3-OLDBACKUP.js" />
+    <Content Include="Scripts\ng\lib\d3\ng-nvd3\angular-nvd3.js" />
+    <Content Include="Scripts\ng\lib\d3\nvd3\nvd3.css" />
+    <Content Include="Scripts\ng\lib\d3\nvd3\nvd3.js" />
+    <Content Include="Scripts\ng\lib\d3\nvd3\nvd3.min.css" />
+    <Content Include="Scripts\ng\lib\d3\nvd3\nvd3.min.js" />
+    <Content Include="Scripts\ng\lib\tickler\angular-ui\ui-bootstrap.min.js" />
+    <Content Include="Scripts\ng\lib\tickler\angular-ui\ui-calendar.js" />
+    <Content Include="Scripts\ng\lib\tickler\fullcalendar\fullcalendar.css" />
+    <Content Include="Scripts\ng\lib\tickler\fullcalendar\fullcalendar.js" />
+    <Content Include="Scripts\ng\lib\tickler\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\select2.min.js" />
+    <Content Include="Scripts\sitevisit.js" />
+    <Content Include="Scripts\typeahead.bundle.js" />
+    <Content Include="Scripts\typeahead.bundle.min.js" />
+    <Content Include="Scripts\yelp.js" />
+    <Content Include="Scripts\ng\lib\angular-file-upload\angular-file-upload.min.map" />
+    <Content Include="Scripts\ng\lib\angular-strap\angular-strap.min.js.map" />
+    <Content Include="Scripts\ng\lib\angular-strap\angular-strap.tpl.min.js.map" />
+    <None Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -93,6 +170,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-1.11.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
