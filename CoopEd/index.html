@@ -1,7 +1,51 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
 <head>
-    <title>Product App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Hello</title>
+</head>
+<body ng-app="coopEd" ng-controller="appController">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" ui-sref="home" ng-click="">W{{400 + 99}} {{testtest}}</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" ui-sref="home">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" ui-sref="signin">Sign in</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a ng-click="" ui-sref="home" href="#">To home</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--Magic! Do not touch-->
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -14,47 +58,45 @@
         ga('send', 'pageview');
 
     </script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/ng/app/app-config.js"></script>
     <script src="Scripts/ng/app/app-controller.js"></script>
-    <script src="Scripts/ng/app/server.js"></script>
-</head>
-<body ng-app="coopEd" ng-controller="appController">
-
-    <div>
-        <h1>{{5+5}} {{ testtest }}</h1>
-    </div>
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
-
-    <!--<script>
-    var uri = 'api/products';
-
-    $(document).ready(function () {
-      // Send an AJAX request
-      $.getJSON(uri)
-          .done(function (data) {
-            // On success, 'data' contains a list of products.
-            $.each(data, function (key, item) {
-              // Add a list item for the product.
-              $('<li>', { text: formatItem(item) }).appendTo($('#products'));
-            });
-          });
-    });
-
-    function formatItem(item) {
-      return item.id + ' : ' + item.name;
-    }
-
-    function find() {
-      var id = $('#prodId').val();
-      $.getJSON(uri + '/' + id)
-          .done(function (data) {
-            $('#product').text(formatItem(data));
-          })
-          .fail(function (jqXHR, textStatus, err) {
-            $('#product').text('Error: ' + err);
-          });
-    }
-    </script>-->
+    <!--<script src="Scripts/ng/app/server.js"></script>-->
 </body>
 </html>
+
+
+
+<!--<script>
+var uri = 'api/products';
+
+$(document).ready(function () {
+  // Send an AJAX request
+  $.getJSON(uri)
+      .done(function (data) {
+        // On success, 'data' contains a list of products.
+        $.each(data, function (key, item) {
+          // Add a list item for the product.
+          $('<li>', { text: formatItem(item) }).appendTo($('#products'));
+        });
+      });
+});
+
+function formatItem(item) {
+  return item.id + ' : ' + item.name;
+}
+
+function find() {
+  var id = $('#prodId').val();
+  $.getJSON(uri + '/' + id)
+      .done(function (data) {
+        $('#product').text(formatItem(data));
+      })
+      .fail(function (jqXHR, textStatus, err) {
+        $('#product').text('Error: ' + err);
+      });
+}
+</script>-->
