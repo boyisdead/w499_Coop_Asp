@@ -33,5 +33,19 @@ namespace CoopEd.Controllers
             }
             return Ok(product);
         }
+
+        //[Route("api/expensebudget/GetIncomeOperatingBudget")]
+        //public HttpResponseMessage GetIncomeOperatingBudget(string BuildingID, string Year, string Type, string Period)
+        //{
+
+        //    SqlDataReader rs = UnknownClassMethods.getCamIncomeTIMABudget(BuildingID, Year, Type, 0, Period);
+        //    JavaScriptSerializer js = new JavaScriptSerializer();
+        //    List<Dictionary<object, object>> lst = SQLDataReaderToListOfObject(rs);
+        //    HttpResponseMessage response = new HttpResponseMessage(HttpStatusCode.OK);
+
+        //    response.Content = new StringContent(js.Serialize(lst), Encoding.UTF8, "text/plain");
+
+        //    return response;
+        //}
     }
 }

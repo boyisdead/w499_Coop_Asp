@@ -1,4 +1,5 @@
 ﻿/// <autosync enabled="true" />
+/// <reference path="../dashboard/dashboardctrl.js" />
 /// <reference path="ng/app/app-config.js" />
 /// <reference path="ng/app/app-controller.js" />
 /// <reference path="ng/app/server.js" />

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html ng-app="CoEdAssistSystem">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <title>Hello</title>
 </head>
-<body ng-app="coopEd" ng-controller="appController">
+<body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,18 +20,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" ui-sref="home" ng-click="">W{{400 + 99}} {{testtest}}</a>
+                <a class="navbar-brand" href="#" ui-sref="home" ng-click="">W{{T}}</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#" ui-sref="home">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" ui-sref="Dashboard">Home<span class="sr-only">(current)</span></a></li>
                     <li><a href="#" ui-sref="signin">Sign in</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a ng-click="" ui-sref="home" href="#">To home</a></li>
-                            <li><a href="#">Another action</a></li>
+                            <li><a ui-sref="Dashboard" href="#">To home</a></li>
+                            <li><a ui-sref="Students" href="#">Students action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Separated link</a></li>
@@ -45,34 +45,47 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    <div ui-view class="fx-fade-right-big" style="margin-left:30px;margin-right:30px;">
+        <!-- View Here -->
+        <!-- View Here -->
+        <!-- View Here -->
+        <!-- View Here -->
+        <!-- View Here -->
+        <!-- View Here -->
+
+    </div>
     <!--Magic! Do not touch-->
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o)
+            , m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
         ga('create', 'UA-50038623-1', 'lewis.com');
         ga('send', 'pageview');
-
     </script>
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
+    <script type="text/javascript" src="bower_components/ngMessage/ngMessage.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Main Module -->
     <script src="Scripts/ng/app/app-config.js"></script>
-    <script src="Scripts/ng/app/app-controller.js"></script>
+    <!-- CoEd Module -->
+    <script type="text/javascript" src="Dashboard/dashboardCtrl.js"></script>
+
+    <script src="Scripts/ng/components/services/request-service.js"></script>
+    <script src="Scripts/ng/components/services/service-alerts.js"></script>
     <!--<script src="Scripts/ng/app/server.js"></script>-->
 </body>
 </html>
 
-
-
 <!--<script>
 var uri = 'api/products';
-
 $(document).ready(function () {
   // Send an AJAX request
   $.getJSON(uri)
@@ -84,19 +97,4 @@ $(document).ready(function () {
         });
       });
 });
-
-function formatItem(item) {
-  return item.id + ' : ' + item.name;
-}
-
-function find() {
-  var id = $('#prodId').val();
-  $.getJSON(uri + '/' + id)
-      .done(function (data) {
-        $('#product').text(formatItem(data));
-      })
-      .fail(function (jqXHR, textStatus, err) {
-        $('#product').text('Error: ' + err);
-      });
-}
 </script>-->

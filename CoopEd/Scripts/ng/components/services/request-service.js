@@ -1,4 +1,4 @@
-﻿angular.module('coopEd.services')
+﻿angular.module('CoEdAssistSystem.services')
     .service('requestService', function ($http, $alert, $rootScope) {
         return function (params) {
             var request = {};
@@ -26,27 +26,3 @@
             return request;
         }
     })
-
-//verb, controller, endpoint, query, body, callback
-
-//angular.module('dtx.services')
-//    .service('requestService', function ($http, $alert, $rootScope) {
-//        return function (params) {
-//            return $http({
-//                method: params.verb,
-//                url: api + '/api/' + params.controller + (params.endpoint ? '/' + params.endpoint : ''),
-//                params: params.query,
-//                data: params.body
-//            }).success(function (data) {
-//                if (!!params.alerts ? params.alerts : true) {
-//                    $alert(alerts[params.verb].success);
-//                }
-
-//                if (!!params.callback) {
-//                    params.callback(data);
-//                }
-//            }).error(function () {
-//                $alert(alerts[params.verb].error);
-//            })
-//        }
-//    })

@@ -1,45 +1,49 @@
 ﻿'use strict';
 
-var app = angular.module('coopEd', [
+var mainModule = angular.module('CoEdAssistSystem', [
 
-    //core
+   //core
+    'ui.router',
     //'ngAnimate',
     //'googlechart',
 
-    //lib
-    //'mgcrea.ngStrap',
-    //'angular-loading-bar',
-    //'nvd3',
-    //'ui.calendar',
-    //'angularFileUpload',
-
     //framework
-    'coopEd.services',
-    'coopEd.directives',
-    'coopEd.filters',
-    //'coopEd.tools'
+    'CoEdAssistSystem.services',
+    'CoEdAssistSystem.directives',
+    'CoEdAssistSystem.filters',
 
-    //app
+   //app
+    'CoEdAssistSystem.dashboard',
+
+   //third party
+     //'ngFx',
 
 ])
 
-//.config(function ($httpProvider, $sceProvider) {
-//    $sceProvider.enabled(false);
-//    $httpProvider.defaults.useXDomain = true;
-//    delete $httpProvider.defaults.headers.common['X-Requested-With'];
-//    $httpProvider.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-//    $httpProvider.defaults.transformRequest = function(data) {
-//            if (data === undefined) {
-//                return data;
-//            }
-//            return $.param(data);
-//    }
-//})
-
-
 //modules
+angular.module('CoEdAssistSystem.services', []);
+angular.module('CoEdAssistSystem.directives', []);
+angular.module('CoEdAssistSystem.filters', []);
 
-angular.module('coopEd.directives', []);
-angular.module('coopEd.filters', []);
-angular.module('coopEd.services', []);
-//angular.module('coopEd.services', ['ngResource']);
+var dashboardModule = angular.module('CoEdAssistSystem.dashboard', []);
+
+mainModule.config(function ($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise("dashboard");
+
+    $stateProvider
+        .state('Dashboard', {
+            url: "/dashboard",
+            templateUrl: "Dashboard/dashboard_page.html",
+            controller: function ($scope) {
+                $scope.T = 499;
+            }
+        })
+    //.state('Students', {
+    //    url: "/students",
+    //    templateUrl: "students_page.html",
+    //    controller: function ($scope) {
+    //        $scope.T = 500;
+    //    }
+    //})
+});
