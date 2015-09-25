@@ -1,8 +1,10 @@
-﻿dashboardModule.controller('dashboardCtrl', ['$scope', '$rootScope', '$state', function ($scope, $rootScope, $state) {
+﻿dashboardModule.controller('dashboardCtrl', ['$scope', 'Students', function ($scope, Students) {
 
-    
-    $scope.testtest = 'Dashboard';
-    $scope.T = 499;
-
+    //$scope.testtest = 'Dashboard';
+    $scope.T = 4545;
+    Students.GetAllStudentsNameTH(function (studentResult) {
+        console.log(studentResult);
+        $scope.studentList = studentResult;
+    });
 
 }]);

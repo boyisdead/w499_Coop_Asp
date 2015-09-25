@@ -9,6 +9,6 @@ E:\Documents\Visual Studio\CoopEd\CoopEd\bin\Newtonsoft.Json.xml
 E:\Documents\Visual Studio\CoopEd\CoopEd\bin\System.Net.Http.Formatting.xml
 E:\Documents\Visual Studio\CoopEd\CoopEd\bin\System.Web.Http.xml
 E:\Documents\Visual Studio\CoopEd\CoopEd\bin\System.Web.Http.WebHost.xml
-E:\Documents\Visual Studio\CoopEd\CoopEd\obj\Debug\CoopEd.csprojResolveAssemblyReference.cache
 E:\Documents\Visual Studio\CoopEd\CoopEd\obj\Debug\CoopEd.dll
 E:\Documents\Visual Studio\CoopEd\CoopEd\obj\Debug\CoopEd.pdb
+E:\Documents\Visual Studio\CoopEd\CoopEd\obj\Debug\CoopEd.csprojResolveAssemblyReference.cache

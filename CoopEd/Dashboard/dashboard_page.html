@@ -5,5 +5,12 @@
         <h1>DashBoard</h1>
         <h1>DashBoard</h1>
         <h1>DashBoard</h1>
+        {{T}}
+        <div ng-repeat="n in [42, 42, 43, 43] track by $index">
+            {{n}}
+        </div>
+        <div ng-repeat="student in studentList"> 
+            {{student.FullNameTH}} 
+        </div>
     </div>
 </div>

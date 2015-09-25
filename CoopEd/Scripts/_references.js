@@ -14,6 +14,7 @@
 /// <reference path="ng/components/filters/trim.js" />
 /// <reference path="ng/components/services/request-service.js" />
 /// <reference path="ng/components/services/service-alerts.js" />
+/// <reference path="ng/components/services/student-service.js" />
 /// <reference path="ng/lib/alphaum/alphanum.js" />
 /// <reference path="ng/lib/angular/angular.min.js" />
 /// <reference path="ng/lib/angular/angular-animate.min.js" />
